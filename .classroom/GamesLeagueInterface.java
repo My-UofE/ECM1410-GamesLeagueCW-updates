@@ -443,7 +443,7 @@ public interface GamesLeagueInterface extends Serializable {
      * @throws IDInvalidException If the ID does not match to any league or player in the league.
      */
     boolean isLeaguePlayerActive(int leagueId, int playerId) 
-        throws IDInvalidException, IllegalArgumentException;
+        throws IDInvalidException;
 
     /** 
      * Sets a player to be registered as inactive in the league.
