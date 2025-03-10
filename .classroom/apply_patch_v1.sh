@@ -3,7 +3,8 @@
 timestamp=$(date -d "today" +"%Y%m%d%H%M%S")
 
 if which python3 &>/dev/null
-then 
+then
+mkdir -p ./.backups
 cp ./src/gamesleague/GamesLeague.java ./.backups/GamesLeague${timestamp}.java
 cp ./src/gamesleague/GamesLeagueInterface.java ./.backups/GamesLeagueInterface${timestamp}.java
 cp ./.classroom/GamesLeagueInterface.java ./src/gamesleague/.
